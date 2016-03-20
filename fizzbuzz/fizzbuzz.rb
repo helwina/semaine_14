@@ -1,5 +1,5 @@
 (1..100).each do |i|
-  if i % 15 == 0
+  if i % 3 == 0 && i % 5 == 0
     puts 'fizzbuzz'
   elsif i % 3 == 0
     puts 'fizz'
