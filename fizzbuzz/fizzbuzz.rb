@@ -12,7 +12,8 @@ end
 
 =begin
 #on peut egalement ecrire
-101.times do |i|
+100.times do |i|
+  i = i + 1
   if i == 0
     print i.to_s + ', '
   elsif i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
