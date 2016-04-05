@@ -13,10 +13,8 @@ end
 =begin
 #on peut egalement ecrire
 100.times do |i|
-  i = i + 1
-  if i == 0
-    print "<#{i}>, "
-  elsif i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
+  i += 1
+  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
     print "<#{i} fizz-buzz>, "
   elsif i % 3 == 0
    print "<#{i} fizz>, "
@@ -43,7 +41,7 @@ end
 #on peut egalement ecrire
 i = 0
 while i < 100
-  i = i + 1
+  i += 1
   if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
     print "<#{i} fizz-buzz>, "
   elsif i % 3 == 0
