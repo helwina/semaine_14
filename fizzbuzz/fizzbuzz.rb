@@ -9,7 +9,6 @@
     print "<#{i}> "
   end
 end
-
 =begin
 #on peut egalement ecrire
 100.times do |i|
@@ -52,4 +51,20 @@ while i < 100
     print "<#{i}> "
   end
 end
+
+#on peut egalement ecrire
+i = 0
+loop {
+  i += 1
+  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
+    print "<#{i} fizz-buzz> "
+  elsif i % 3 == 0
+    print "<#{i} fizz> "
+  elsif i % 5 == 0
+    print "<#{i} buzz> "
+  else
+    print "<#{i}> "
+  end
+  break if i == 100
+}
 =end
