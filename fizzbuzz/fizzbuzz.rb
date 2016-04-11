@@ -1,31 +1,3 @@
-i = 0
-begin
-  i += 1
-  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
-    print "<#{i} fizz-buzz> "
-  elsif i % 3 == 0
-    print "<#{i} fizz> "
-  elsif i % 5 == 0
-    print "<#{i} buzz> "
-  else
-    print "<#{i}> "
-  end
-end while i < 100
-
-=begin
-i = 0
-until i == 100
-  i += 1
-  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
-    print "<#{i} fizz-buzz> "
-  elsif i % 3 == 0
-    print "<#{i} fizz> "
-  elsif i % 5 == 0
-    print "<#{i} buzz> "
-  else
-    print "<#{i}> "
-  end
-end
 
 (1..100).each do |i|
   if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
@@ -39,6 +11,7 @@ end
   end
 end
 
+=begin
 #on peut egalement ecrire
 100.times do |i|
   i += 1
@@ -83,7 +56,22 @@ end
 
 #on peut egalement ecrire
 i = 0
-loop {
+begin
+  i += 1
+  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
+    print "<#{i} fizz-buzz> "
+  elsif i % 3 == 0
+    print "<#{i} fizz> "
+  elsif i % 5 == 0
+    print "<#{i} buzz> "
+  else
+    print "<#{i}> "
+  end
+end while i < 100
+
+#on peut egalement ecrire
+i = 0
+loop do
   i += 1
   if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
     print "<#{i} fizz-buzz> "
@@ -95,5 +83,35 @@ loop {
     print "<#{i}> "
   end
   break if i == 100
-}
+end
+
+#on peut egalement ecrire
+i = 0
+until i == 100
+  i += 1
+  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
+    print "<#{i} fizz-buzz> "
+  elsif i % 3 == 0
+    print "<#{i} fizz> "
+  elsif i % 5 == 0
+    print "<#{i} buzz> "
+  else
+    print "<#{i}> "
+  end
+end
+
+#on peut egalement ecrire
+i = 0
+begin
+  i += 1
+  if i % 3 == 0 && i % 5 == 0 #on peut egalement utiliser  if i % 15 == 0
+    print "<#{i} fizz-buzz> "
+  elsif i % 3 == 0
+    print "<#{i} fizz> "
+  elsif i % 5 == 0
+    print "<#{i} buzz> "
+  else
+    print "<#{i}> "
+  end
+end until i == 100
 =end
